@@ -8,7 +8,7 @@
 		<div class="collapse navbar-collapse d-lg-flex justify-content-xl-center code2" id="mainNav">
 			<ul class="navbar-nav">
 				<li class="nav-item active" v-for="nav in navs">
-					<a class="nav-link" :href="nav.href">{{nav.link}}</a>
+					<a class="nav-link" :href="nav.href" :title="nav.title">{{nav.link}}</a>
 				</li>
 			</ul>
 		</div>
@@ -33,16 +33,9 @@
 						href: "#"
 					},
 					{
-						link: "Models & Options",
-						href: "#"
-					},
-					{
-						link: "News",
-						href: "#"
-					},
-					{
-						link: "Gallery",
-						href: "#"
+						link: "My Work",
+						href: "#",
+						title: "Past, Present, and Pitches"
 					},
 					{
 						link: "Contact",
